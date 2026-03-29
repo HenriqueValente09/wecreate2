@@ -18,19 +18,19 @@ export default function Gallery({
   const { t } = useLanguage();
 
   return (
-    <section id="gallery" className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h2 className="text-5xl md:text-7xl font-bold text-foreground mb-4">
+    <section id="gallery" className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
+      <div className="text-center mb-10 md:mb-16">
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-3 md:mb-4">
           {t.gallery.title}
         </h2>
-        <p className="text-xl text-muted-foreground">{t.gallery.subtitle}</p>
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground">{t.gallery.subtitle}</p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative aspect-square overflow-hidden rounded-xl group cursor-pointer"
+            className="relative aspect-square overflow-hidden rounded-lg md:rounded-xl group cursor-pointer"
           >
             <img
               src={image.src || "/placeholder.svg"}
@@ -39,7 +39,7 @@ export default function Gallery({
               style={{ objectPosition: image.objectPosition || "center" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <span className="absolute bottom-4 left-4 text-2xl text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span className="absolute bottom-3 left-3 md:bottom-4 md:left-4 text-lg md:text-2xl text-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               {image.alt}
             </span>
           </div>

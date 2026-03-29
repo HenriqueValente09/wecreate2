@@ -40,15 +40,15 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <section id="services" className="py-24 px-4 md:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-5xl md:text-7xl font-bold text-foreground mb-4">
+    <section id="services" className="py-16 md:py-24 px-4 md:px-8">
+      <div className="text-center mb-10 md:mb-16">
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-4">
           {t.services.title}
         </h2>
       </div>
 
       <div className="max-w-6xl mx-auto relative">
-        <div className="relative h-[500px] md:h-[600px] overflow-hidden rounded-2xl">
+        <div className="relative h-[350px] sm:h-[450px] md:h-[600px] overflow-hidden rounded-xl md:rounded-2xl">
           {services.map((service, index) => {
             const serviceData = t.services[service.key];
             return (
@@ -71,11 +71,11 @@ export default function ServicesCarousel() {
                   className={`absolute inset-0 bg-gradient-to-r ${service.gradient}`}
                 />
 
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-8 md:px-16">
-                  <h3 className="text-6xl md:text-8xl font-bold text-foreground mb-6">
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 sm:px-10 md:px-16">
+                  <h3 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 md:mb-6">
                     {serviceData.name}
                   </h3>
-                  <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-2xl leading-relaxed">
                     {serviceData.desc}
                   </p>
                   <a
@@ -86,7 +86,7 @@ export default function ServicesCarousel() {
                           ? "ballersvision"
                           : ""
                     }
-                    className="text-[30px]! bg-[#222222] cursor-pointer p-4 rounded text-foreground/90 max-w-2xl leading-relaxed mt-5"
+                    className="text-base sm:text-lg md:text-xl bg-[#222222] cursor-pointer px-5 py-3 sm:px-6 sm:py-4 rounded-lg text-foreground/90 max-w-2xl leading-relaxed mt-4 md:mt-5 inline-block font-medium hover:bg-[#333333] transition-colors"
                   >
                     {serviceData.button}
                   </a>
@@ -101,7 +101,7 @@ export default function ServicesCarousel() {
             prev();
             handleInteraction();
           }}
-          className="absolute hidden sm:block left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/50 backdrop-blur-sm rounded-full p-0! flex items-center justify-center text-foreground hover:bg-primary transition-colors"
+          className="absolute hidden sm:flex left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/50 backdrop-blur-sm rounded-full items-center justify-center text-foreground hover:bg-primary transition-colors"
         >
           <ChevronLeft className="m-auto" />
         </button>
@@ -111,12 +111,12 @@ export default function ServicesCarousel() {
             next();
             handleInteraction();
           }}
-          className="absolute hidden sm:block right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/50 backdrop-blur-sm rounded-full p-0! flex items-center justify-center text-foreground hover:bg-primary transition-colors"
+          className="absolute hidden sm:flex right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/50 backdrop-blur-sm rounded-full items-center justify-center text-foreground hover:bg-primary transition-colors"
         >
           <ChevronRight className="m-auto" />
         </button>
 
-        <div className="flex justify-center gap-3 mt-8">
+        <div className="flex justify-center gap-3 mt-6 md:mt-8">
           {services.map((service, index) => (
             <button
               key={service.key}

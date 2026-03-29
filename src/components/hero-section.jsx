@@ -1,6 +1,6 @@
 import { useLanguage } from "./language-context"
 
-export default function HeroSection(title = "wecreate") {
+export default function HeroSection() {
   const { t } = useLanguage()
 
   return (
@@ -13,11 +13,16 @@ export default function HeroSection(title = "wecreate") {
 
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 text-center px-4">
-        <h1 className="!text-[7rem] !md:max-md:text-[30rem] !lg:max-md:text-[30rem] mx-auto font-bold text-foreground tracking-tight animate-fade-in">
+      <div className="relative z-10 text-center px-6">
+        <h1
+          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-tight"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
           wecreate
         </h1>
-        <p className="mt-6 text-2xl md:text-3xl text-foreground/70">{t.hero.subtitle}</p>
+        <p className="mt-6 text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground/70" style={{ fontFamily: "var(--font-body)" }}>
+          {t.hero.subtitle}
+        </p>
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
