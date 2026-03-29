@@ -23,7 +23,7 @@ export default function WhatsAppButton() {
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-4">
       {isOpen && (
         <div className="w-[calc(100vw-2rem)] sm:w-80 max-w-80 bg-card border border-border rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 fade-in duration-300">
-          <div className="bg-green-600 p-3 sm:p-4 flex items-center justify-between">
+          <div className="bg-[#d39f17] p-3 sm:p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center">
                 <svg viewBox="0 0 24 24" className="w-5 h-5 sm:w-6 sm:h-6 fill-white">
@@ -53,12 +53,12 @@ export default function WhatsAppButton() {
               onChange={(e) => setMessage(e.target.value)}
               placeholder={t.whatsapp.placeholder}
               onKeyDown={(e) => e.key === "Enter" && handleSend()}
-              className="flex-1 px-3 py-2.5 sm:px-4 sm:py-3 bg-secondary border border-border rounded-full text-foreground text-base sm:text-lg placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="flex-1 px-3 py-2.5 sm:px-4 sm:py-3 bg-secondary border border-border rounded-full text-foreground text-base sm:text-lg placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#d39f17]"
             />
             <button
               onClick={handleSend}
               disabled={!message.trim()}
-              className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed rounded-full flex items-center justify-center text-white transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-[#d39f17] hover:bg-[#b88914] disabled:opacity-50 disabled:cursor-not-allowed rounded-full flex items-center justify-center text-white transition-colors"
             >
               <Send className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
@@ -68,7 +68,7 @@ export default function WhatsAppButton() {
 
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 sm:w-16 sm:h-16 bg-green-600 hover:bg-green-700 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
+        className="w-14 h-14 sm:w-16 sm:h-16 bg-[#d39f17] hover:bg-[#b88914] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
       >
         {isOpen ? (
           <X className="w-6 h-6 sm:w-7 sm:h-7 text-white" />

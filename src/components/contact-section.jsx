@@ -1,11 +1,18 @@
 import { useState } from "react"
 import { Send, Instagram, Linkedin, MessageCircle, Loader2, CheckCircle, AlertCircle } from "lucide-react"
+import emailjs from "@emailjs/browser"
 import { useLanguage } from "./language-context"
 
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/valentin.pittard/",
   linkedin: "https://www.linkedin.com/in/SEU-LINKEDIN",
   whatsapp: "41797088102",
+}
+
+const EMAILJS_CONFIG = {
+  serviceId: "YOUR_SERVICE_ID",
+  templateId: "YOUR_TEMPLATE_ID",
+  publicKey: "YOUR_PUBLIC_KEY",
 }
 
 export default function ContactSection() {
@@ -35,12 +42,21 @@ export default function ContactSection() {
     setStatus("sending")
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      console.log("Form submitted:", formData)
+      await emailjs.send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        EMAILJS_CONFIG.publicKey
+      )
       setStatus("success")
       setFormData({ name: "", email: "", message: "" })
       setTimeout(() => setStatus("idle"), 4000)
-    } catch {
+    } catch (error) {
+      console.error("EmailJS error:", error)
       setStatus("error")
       setTimeout(() => setStatus("idle"), 4000)
     }
