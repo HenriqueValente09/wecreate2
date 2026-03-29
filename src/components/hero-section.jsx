@@ -5,16 +5,11 @@ export default function HeroSection(title = "wecreate") {
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+      <img
+        src="/hero_image.jpeg"
+        alt="wecreate hero"
         className="absolute inset-0 w-full h-full object-cover"
-        poster="/dark-cinematic-photography-studio.jpg"
-      >
-        <source src="/wecreatevideo.mp4" type="video/mp4" />
-      </video>
+      />
 
       <div className="absolute inset-0 bg-black/70" />
 

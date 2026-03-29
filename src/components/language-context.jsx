@@ -12,11 +12,6 @@ const translations = {
         desc: "Creative photography that tells your unique story. From editorial shoots to brand campaigns, we bring artistic vision to every frame.",
         button: "Learn more",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Wedding photography that captures the magic of your special day. Every tear, every smile, every dance preserved forever.",
-        button: "Learn more",
-      },
       ballersvision: {
         name: "ballersvision",
         desc: "Dynamic sports photography that freezes the intensity and passion of athletic excellence in stunning detail.",
@@ -49,11 +44,7 @@ const translations = {
         desc: "Fotografia criativa que conta sua história única. De ensaios editoriais a campanhas de marca, trazemos visão artística para cada quadro.",
         button: "Conhecer mais",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Fotografia de casamento que captura a magia do seu dia especial. Cada lágrima, cada sorriso, cada dança preservados para sempre.",
-        button: "Conhecer mais",
-      },
+
       ballersvision: {
         name: "ballersvision",
         desc: "Fotografia esportiva dinâmica que congela a intensidade e paixão da excelência atlética em detalhes impressionantes.",
@@ -84,11 +75,6 @@ const translations = {
       wecreate: {
         name: "wecreate",
         desc: "Fotografía creativa que cuenta tu historia única. Desde sesiones editoriales hasta campañas de marca, aportamos visión artística a cada toma.",
-        button: "Conocer más",
-      },
-      wemoment: {
-        name: "wemoment",
-        desc: "Fotografía de bodas que captura la magia de tu día especial. Cada lágrima, cada sonrisa, cada baile preservados para siempre.",
         button: "Conocer más",
       },
       ballersvision: {
@@ -123,11 +109,6 @@ const translations = {
         desc: "Photographie créative qui raconte votre histoire unique. Des séances éditoriales aux campagnes de marque, nous apportons une vision artistique à chaque image.",
         button: "En savoir plus",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Photographie de mariage qui capture la magie de votre jour spécial. Chaque larme, chaque sourire, chaque danse préservés pour toujours.",
-        button: "En savoir plus",
-      },
       ballersvision: {
         name: "ballersvision",
         desc: "Photographie sportive dynamique qui fige l'intensité et la passion de l'excellence athlétique dans des détails saisissants.",
@@ -160,11 +141,6 @@ const translations = {
         desc: "Kreative Fotografie, die Ihre einzigartige Geschichte erzählt. Von Editorial-Shootings bis zu Markenkampagnen bringen wir künstlerische Vision in jedes Bild.",
         button: "Mehr erfahren",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Hochzeitsfotografie, die die Magie Ihres besonderen Tages einfängt. Jede Träne, jedes Lächeln, jeder Tanz für immer bewahrt.",
-        button: "Mehr erfahren",
-      },
       ballersvision: {
         name: "ballersvision",
         desc: "Dynamische Sportfotografie, die die Intensität und Leidenschaft sportlicher Exzellenz in atemberaubenden Details einfängt.",
@@ -195,11 +171,6 @@ const translations = {
       wecreate: {
         name: "wecreate",
         desc: "Fotografia creativa che racconta la tua storia unica. Dalle sessioni editoriali alle campagne di brand, portiamo visione artistica in ogni scatto.",
-        button: "Scopri di più",
-      },
-      wemoment: {
-        name: "wemoment",
-        desc: "Fotografia matrimoniale che cattura la magia del tuo giorno speciale. Ogni lacrima, ogni sorriso, ogni ballo preservati per sempre.",
         button: "Scopri di più",
       },
       ballersvision: {
