@@ -8,19 +8,16 @@ const translations = {
     services: {
       title: "Our Services",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Creative photography that tells your unique story. From editorial shoots to brand campaigns, we bring artistic vision to every frame.",
-        button: "Learn more",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Wedding photography that captures the magic of your special day. Every tear, every smile, every dance preserved forever.",
-        button: "Learn more",
-      },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Dynamic sports photography that freezes the intensity and passion of athletic excellence in stunning detail.",
-        button: "Learn more",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Captivating timelapse productions that compress hours, days, and seasons into mesmerizing visual narratives, revealing the hidden rhythms of the world around us.",
       },
     },
     about: {
@@ -30,10 +27,16 @@ const translations = {
     },
     contact: {
       title: "Get in Touch",
+      subtitle: "We'd love to hear from you",
+      socialTitle: "Follow Us",
+      formTitle: "Send a Message",
       name: "Your Name",
       email: "Your Email",
       message: "Your Message",
       send: "Send Message",
+      sending: "Sending...",
+      success: "Message sent successfully!",
+      error: "Failed to send message. Please try again.",
     },
     whatsapp: { placeholder: "Type your message...", send: "Send via WhatsApp" },
   },
@@ -45,19 +48,16 @@ const translations = {
     services: {
       title: "Nossos Serviços",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Fotografia criativa que conta sua história única. De ensaios editoriais a campanhas de marca, trazemos visão artística para cada quadro.",
-        button: "Conhecer mais",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Fotografia de casamento que captura a magia do seu dia especial. Cada lágrima, cada sorriso, cada dança preservados para sempre.",
-        button: "Conhecer mais",
-      },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Fotografia esportiva dinâmica que congela a intensidade e paixão da excelência atlética em detalhes impressionantes.",
-        button: "Conhecer mais",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Produções de timelapse cativantes que comprimem horas, dias e estações em narrativas visuais hipnotizantes, revelando os ritmos ocultos do mundo ao nosso redor.",
       },
     },
     about: {
@@ -67,10 +67,16 @@ const translations = {
     },
     contact: {
       title: "Entre em Contato",
+      subtitle: "Adoraríamos ouvir você",
+      socialTitle: "Siga-nos",
+      formTitle: "Envie uma Mensagem",
       name: "Seu Nome",
       email: "Seu Email",
       message: "Sua Mensagem",
       send: "Enviar Mensagem",
+      sending: "Enviando...",
+      success: "Mensagem enviada com sucesso!",
+      error: "Falha ao enviar mensagem. Tente novamente.",
     },
     whatsapp: { placeholder: "Digite sua mensagem...", send: "Enviar via WhatsApp" },
   },
@@ -82,19 +88,16 @@ const translations = {
     services: {
       title: "Nuestros Servicios",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Fotografía creativa que cuenta tu historia única. Desde sesiones editoriales hasta campañas de marca, aportamos visión artística a cada toma.",
-        button: "Conocer más",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Fotografía de bodas que captura la magia de tu día especial. Cada lágrima, cada sonrisa, cada baile preservados para siempre.",
-        button: "Conocer más",
-      },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Fotografía deportiva dinámica que congela la intensidad y pasión de la excelencia atlética en detalles impresionantes.",
-        button: "Conocer más",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Producciones de timelapse cautivadoras que comprimen horas, días y estaciones en narrativas visuales hipnotizantes, revelando los ritmos ocultos del mundo que nos rodea.",
       },
     },
     about: {
@@ -104,10 +107,16 @@ const translations = {
     },
     contact: {
       title: "Contáctanos",
+      subtitle: "Nos encantaría saber de ti",
+      socialTitle: "Síguenos",
+      formTitle: "Envía un Mensaje",
       name: "Tu Nombre",
       email: "Tu Email",
       message: "Tu Mensaje",
       send: "Enviar Mensaje",
+      sending: "Enviando...",
+      success: "¡Mensaje enviado con éxito!",
+      error: "Error al enviar el mensaje. Inténtalo de nuevo.",
     },
     whatsapp: { placeholder: "Escribe tu mensaje...", send: "Enviar por WhatsApp" },
   },
@@ -119,19 +128,16 @@ const translations = {
     services: {
       title: "Nos Services",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Photographie créative qui raconte votre histoire unique. Des séances éditoriales aux campagnes de marque, nous apportons une vision artistique à chaque image.",
-        button: "En savoir plus",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Photographie de mariage qui capture la magie de votre jour spécial. Chaque larme, chaque sourire, chaque danse préservés pour toujours.",
-        button: "En savoir plus",
-      },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Photographie sportive dynamique qui fige l'intensité et la passion de l'excellence athlétique dans des détails saisissants.",
-        button: "En savoir plus",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Des productions timelapse captivantes qui compriment heures, jours et saisons en récits visuels envoûtants, révélant les rythmes cachés du monde qui nous entoure.",
       },
     },
     about: {
@@ -141,10 +147,16 @@ const translations = {
     },
     contact: {
       title: "Nous Contacter",
+      subtitle: "Nous serions ravis de vous entendre",
+      socialTitle: "Suivez-nous",
+      formTitle: "Envoyez un Message",
       name: "Votre Nom",
       email: "Votre Email",
       message: "Votre Message",
       send: "Envoyer le Message",
+      sending: "Envoi en cours...",
+      success: "Message envoyé avec succès !",
+      error: "Échec de l'envoi du message. Veuillez réessayer.",
     },
     whatsapp: { placeholder: "Tapez votre message...", send: "Envoyer via WhatsApp" },
   },
@@ -156,19 +168,16 @@ const translations = {
     services: {
       title: "Unsere Leistungen",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Kreative Fotografie, die Ihre einzigartige Geschichte erzählt. Von Editorial-Shootings bis zu Markenkampagnen bringen wir künstlerische Vision in jedes Bild.",
-        button: "Mehr erfahren",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Hochzeitsfotografie, die die Magie Ihres besonderen Tages einfängt. Jede Träne, jedes Lächeln, jeder Tanz für immer bewahrt.",
-        button: "Mehr erfahren",
-      },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Dynamische Sportfotografie, die die Intensität und Leidenschaft sportlicher Exzellenz in atemberaubenden Details einfängt.",
-        button: "Mehr erfahren",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Fesselnde Zeitraffer-Produktionen, die Stunden, Tage und Jahreszeiten in hypnotisierende visuelle Erzählungen komprimieren und die verborgenen Rhythmen der Welt um uns herum enthüllen.",
       },
     },
     about: {
@@ -178,10 +187,16 @@ const translations = {
     },
     contact: {
       title: "Kontaktieren Sie Uns",
+      subtitle: "Wir würden gerne von Ihnen hören",
+      socialTitle: "Folgen Sie Uns",
+      formTitle: "Nachricht Senden",
       name: "Ihr Name",
       email: "Ihre Email",
       message: "Ihre Nachricht",
       send: "Nachricht Senden",
+      sending: "Wird gesendet...",
+      success: "Nachricht erfolgreich gesendet!",
+      error: "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
     },
     whatsapp: { placeholder: "Nachricht eingeben...", send: "Über WhatsApp senden" },
   },
@@ -193,19 +208,16 @@ const translations = {
     services: {
       title: "I Nostri Servizi",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Fotografia creativa che racconta la tua storia unica. Dalle sessioni editoriali alle campagne di brand, portiamo visione artistica in ogni scatto.",
-        button: "Scopri di più",
       },
-      wemoment: {
-        name: "wemoment",
-        desc: "Fotografia matrimoniale che cattura la magia del tuo giorno speciale. Ogni lacrima, ogni sorriso, ogni ballo preservati per sempre.",
-        button: "Scopri di più",
-      },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Fotografia sportiva dinamica che congela l'intensità e la passione dell'eccellenza atletica in dettagli mozzafiato.",
-        button: "Scopri di più",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Produzioni timelapse affascinanti che comprimono ore, giorni e stagioni in narrazioni visive ipnotiche, rivelando i ritmi nascosti del mondo che ci circonda.",
       },
     },
     about: {
@@ -215,10 +227,16 @@ const translations = {
     },
     contact: {
       title: "Contattaci",
+      subtitle: "Ci farebbe piacere sentirti",
+      socialTitle: "Seguici",
+      formTitle: "Invia un Messaggio",
       name: "Il Tuo Nome",
       email: "La Tua Email",
       message: "Il Tuo Messaggio",
       send: "Invia Messaggio",
+      sending: "Invio in corso...",
+      success: "Messaggio inviato con successo!",
+      error: "Invio del messaggio fallito. Riprova.",
     },
     whatsapp: { placeholder: "Scrivi il tuo messaggio...", send: "Invia via WhatsApp" },
   },
