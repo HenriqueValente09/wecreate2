@@ -5,7 +5,7 @@ import { useLanguage } from "./language-context"
 
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/valentin.pittard/",
-  linkedin: "https://www.linkedin.com/in/SEU-LINKEDIN",
+  linkedin: "https://www.linkedin.com/in/valentin-pittard-3aa58a117",
   whatsapp: "41797088102",
 }
 
