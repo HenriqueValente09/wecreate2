@@ -89,13 +89,13 @@ export default function ContactSection() {
   return (
     <section id="contact" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 md:px-8 md:py-24">
       <div className="text-center mb-10 md:mb-16">
-        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-3 md:mb-4">{t.contact.title}</h2>
-        <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground">{t.contact.subtitle}</p>
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-4" style={{ color: "#d39f17" }}>{t.contact.title}</h2>
+        <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl" style={{ color: "#ffffff" }}>{t.contact.subtitle}</p>
       </div>
 
       <div className="grid items-start gap-8 md:grid-cols-2 md:gap-12">
         <div>
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 md:mb-6">{t.contact.socialTitle}</h3>
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 md:mb-6" style={{ color: "#d39f17" }}>{t.contact.socialTitle}</h3>
           <div className="flex flex-col gap-3 md:gap-4">
             {socialLinks.map((social) => (
               <a
@@ -103,26 +103,26 @@ export default function ContactSection() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group flex min-w-0 items-center gap-4 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:shadow-lg md:p-5 ${social.color}`}
+                className={`group flex min-w-0 items-center gap-4 rounded-xl border border-white bg-card p-4 transition-all duration-300 hover:shadow-lg md:p-5 ${social.color}`}
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-lg flex items-center justify-center transition-colors">
-                  <social.icon className={`w-5 h-5 md:w-6 md:h-6 text-foreground/70 transition-colors ${social.iconColor}`} />
+                  <social.icon className={`w-5 h-5 md:w-6 md:h-6 text-white transition-colors ${social.iconColor}`} />
                 </div>
-                <span className="min-w-0 break-words text-base font-medium text-foreground sm:text-lg md:text-xl">{social.name}</span>
+                <span className="min-w-0 break-words text-base font-medium text-white sm:text-lg md:text-xl">{social.name}</span>
               </a>
             ))}
           </div>
         </div>
 
         <div>
-          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 md:mb-6">{t.contact.formTitle}</h3>
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 md:mb-6" style={{ color: "#d39f17" }}>{t.contact.formTitle}</h3>
           <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
             <input
               type="text"
               placeholder={t.contact.name}
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 md:px-6 md:py-4 bg-card border border-border rounded-xl text-foreground text-base md:text-lg placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
+              className="w-full px-4 py-3 md:px-6 md:py-4 bg-card border border-border rounded-xl text-white text-base md:text-lg placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-primary transition-colors"
             />
             <input
               type="email"
@@ -132,7 +132,7 @@ export default function ContactSection() {
                 setFormData({ ...formData, email: e.target.value })
                 if (errors.email) setErrors({ ...errors, email: false })
               }}
-              className={`w-full px-4 py-3 md:px-6 md:py-4 bg-card border rounded-xl text-foreground text-base md:text-lg placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-colors ${
+              className={`w-full px-4 py-3 md:px-6 md:py-4 bg-card border rounded-xl text-white text-base md:text-lg placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-primary transition-colors ${
                 errors.email ? "border-red-500" : "border-border"
               }`}
             />
@@ -144,7 +144,7 @@ export default function ContactSection() {
                 setFormData({ ...formData, message: e.target.value })
                 if (errors.message) setErrors({ ...errors, message: false })
               }}
-              className={`w-full px-4 py-3 md:px-6 md:py-4 bg-card border rounded-xl text-foreground text-base md:text-lg placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-colors ${
+              className={`w-full px-4 py-3 md:px-6 md:py-4 bg-card border rounded-xl text-white text-base md:text-lg placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-colors ${
                 errors.message ? "border-red-500" : "border-border"
               }`}
             />

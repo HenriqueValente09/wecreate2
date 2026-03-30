@@ -8,14 +8,16 @@ const translations = {
     services: {
       title: "Our Services",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Creative photography that tells your unique story. From editorial shoots to brand campaigns, we bring artistic vision to every frame.",
-        button: "Learn more",
       },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Dynamic sports photography that freezes the intensity and passion of athletic excellence in stunning detail.",
-        button: "Learn more",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Captivating timelapse productions that compress hours, days, and seasons into mesmerizing visual narratives, revealing the hidden rhythms of the world around us.",
       },
     },
     about: {
@@ -46,15 +48,16 @@ const translations = {
     services: {
       title: "Nossos Serviços",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Fotografia criativa que conta sua história única. De ensaios editoriais a campanhas de marca, trazemos visão artística para cada quadro.",
-        button: "Conhecer mais",
       },
-
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Fotografia esportiva dinâmica que congela a intensidade e paixão da excelência atlética em detalhes impressionantes.",
-        button: "Conhecer mais",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Produções de timelapse cativantes que comprimem horas, dias e estações em narrativas visuais hipnotizantes, revelando os ritmos ocultos do mundo ao nosso redor.",
       },
     },
     about: {
@@ -85,14 +88,16 @@ const translations = {
     services: {
       title: "Nuestros Servicios",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Fotografía creativa que cuenta tu historia única. Desde sesiones editoriales hasta campañas de marca, aportamos visión artística a cada toma.",
-        button: "Conocer más",
       },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Fotografía deportiva dinámica que congela la intensidad y pasión de la excelencia atlética en detalles impresionantes.",
-        button: "Conocer más",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Producciones de timelapse cautivadoras que comprimen horas, días y estaciones en narrativas visuales hipnotizantes, revelando los ritmos ocultos del mundo que nos rodea.",
       },
     },
     about: {
@@ -123,14 +128,16 @@ const translations = {
     services: {
       title: "Nos Services",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Photographie créative qui raconte votre histoire unique. Des séances éditoriales aux campagnes de marque, nous apportons une vision artistique à chaque image.",
-        button: "En savoir plus",
       },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Photographie sportive dynamique qui fige l'intensité et la passion de l'excellence athlétique dans des détails saisissants.",
-        button: "En savoir plus",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Des productions timelapse captivantes qui compriment heures, jours et saisons en récits visuels envoûtants, révélant les rythmes cachés du monde qui nous entoure.",
       },
     },
     about: {
@@ -161,14 +168,16 @@ const translations = {
     services: {
       title: "Unsere Leistungen",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Kreative Fotografie, die Ihre einzigartige Geschichte erzählt. Von Editorial-Shootings bis zu Markenkampagnen bringen wir künstlerische Vision in jedes Bild.",
-        button: "Mehr erfahren",
       },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Dynamische Sportfotografie, die die Intensität und Leidenschaft sportlicher Exzellenz in atemberaubenden Details einfängt.",
-        button: "Mehr erfahren",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Fesselnde Zeitraffer-Produktionen, die Stunden, Tage und Jahreszeiten in hypnotisierende visuelle Erzählungen komprimieren und die verborgenen Rhythmen der Welt um uns herum enthüllen.",
       },
     },
     about: {
@@ -199,14 +208,16 @@ const translations = {
     services: {
       title: "I Nostri Servizi",
       wecreate: {
-        name: "wecreate",
+        name: "WeCreate",
         desc: "Fotografia creativa che racconta la tua storia unica. Dalle sessioni editoriali alle campagne di brand, portiamo visione artistica in ogni scatto.",
-        button: "Scopri di più",
       },
-      ballersvision: {
-        name: "ballersvision",
+      wesports: {
+        name: "WeSports",
         desc: "Fotografia sportiva dinamica che congela l'intensità e la passione dell'eccellenza atletica in dettagli mozzafiato.",
-        button: "Scopri di più",
+      },
+      welapse: {
+        name: "WeLapse",
+        desc: "Produzioni timelapse affascinanti che comprimono ore, giorni e stagioni in narrazioni visive ipnotiche, rivelando i ritmi nascosti del mondo che ci circonda.",
       },
     },
     about: {

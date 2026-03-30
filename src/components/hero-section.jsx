@@ -15,12 +15,12 @@ export default function HeroSection() {
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-4 pt-24 pb-16 text-center sm:px-6 sm:pt-28 sm:pb-20">
         <h1
-          className="text-[clamp(3.5rem,18vw,9rem)] font-bold leading-none text-foreground tracking-tight"
-          style={{ fontFamily: "var(--font-display)" }}
+          className="text-[clamp(3.5rem,18vw,9rem)] font-bold leading-none tracking-tight"
+          style={{ fontFamily: "var(--font-display)", color: "#d39f17" }}
         >
           wecreate
         </h1>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-foreground/70 sm:mt-6 sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "var(--font-body)" }}>
+        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed sm:mt-6 sm:text-xl md:text-2xl lg:text-3xl" style={{ fontFamily: "var(--font-body)", color: "#ffffff" }}>
           {t.hero.subtitle}
         </p>
       </div>

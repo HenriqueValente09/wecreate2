@@ -42,19 +42,19 @@ export default function Navbar() {
           </a>
 
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
-            <a href="#home" className="text-base lg:text-lg text-white text-foreground/80 hover:text-primary transition-colors">
+            <a href="#home" className="text-base lg:text-lg text-white hover:text-primary transition-colors">
               {t.nav.home}
             </a>
-            <a href="#gallery" className="text-base lg:text-lg text-foreground/80 hover:text-primary transition-colors">
+            <a href="#gallery" className="text-base lg:text-lg text-white hover:text-primary transition-colors">
               {t.nav.gallery}
             </a>
-            <a href="#services" className="text-base lg:text-lg text-foreground/80 hover:text-primary transition-colors">
+            <a href="#services" className="text-base lg:text-lg text-white hover:text-primary transition-colors">
               {t.nav.services}
             </a>
-            <a href="#about" className="text-base lg:text-lg text-foreground/80 hover:text-primary transition-colors">
+            <a href="#about" className="text-base lg:text-lg text-white hover:text-primary transition-colors">
               {t.nav.about}
             </a>
-            <a href="#contact" className="text-base lg:text-lg text-foreground/80 hover:text-primary transition-colors">
+            <a href="#contact" className="text-base lg:text-lg text-white hover:text-primary transition-colors">
               {t.nav.contact}
             </a>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
               </button>
 
               {langOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-xl overflow-hidden">
+                <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-xl overflow-hidden">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -78,8 +78,8 @@ export default function Navbar() {
                         setLanguage(lang.code)
                         setLangOpen(false)
                       }}
-                      className={`w-full flex items-center !rounded-none pointer gap-3 px-4 py-3 text-left hover:bg-secondary transition-colors ${
-                        language === lang.code ? "bg-primary/20 text-primary" : "text-foreground"
+                      className={`w-full flex items-center !rounded-none pointer gap-3 px-4 py-3 text-left transition-colors ${
+                        language === lang.code ? "bg-gray-100 text-black font-semibold" : "text-black hover:bg-gray-100"
                       }`}
                     >
                       <span className="text-xl">{lang.flag}</span>
@@ -103,19 +103,19 @@ export default function Navbar() {
         {isOpen && (
           <div className="border-t border-border py-4 md:hidden max-h-[calc(100svh-4rem)] overflow-y-auto">
             <div className="flex flex-col gap-1">
-              <a href="#home" onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
+              <a href="#home" onClick={() => setIsOpen(false)} className="text-lg text-white hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
                 {t.nav.home}
               </a>
-              <a href="#gallery" onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
+              <a href="#gallery" onClick={() => setIsOpen(false)} className="text-lg text-white hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
                 {t.nav.gallery}
               </a>
-              <a href="#services" onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
+              <a href="#services" onClick={() => setIsOpen(false)} className="text-lg text-white hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
                 {t.nav.services}
               </a>
-              <a href="#about" onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
+              <a href="#about" onClick={() => setIsOpen(false)} className="text-lg text-white hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
                 {t.nav.about}
               </a>
-              <a href="#contact" onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
+              <a href="#contact" onClick={() => setIsOpen(false)} className="text-lg text-white hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
                 {t.nav.contact}
               </a>
 

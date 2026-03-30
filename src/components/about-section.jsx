@@ -21,17 +21,17 @@ export default function AboutSection() {
         </div>
 
         <div className="text-center md:text-left">
-          <h2 className="mb-6 text-4xl font-bold text-foreground sm:text-5xl md:mb-8 md:text-7xl">{t.about.title}</h2>
-          <p className="mb-6 text-base leading-relaxed text-muted-foreground sm:text-lg md:mb-8 md:text-xl">{t.about.text}</p>
+          <h2 className="mb-6 text-4xl font-bold sm:text-5xl md:mb-8 md:text-7xl" style={{ color: "#d39f17" }}>{t.about.title}</h2>
+          <p className="mb-6 text-base leading-relaxed sm:text-lg md:mb-8 md:text-xl" style={{ color: "#ffffff" }}>{t.about.text}</p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
             <div className="bg-card p-4 md:p-6 rounded-xl border border-border">
-              <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">500+</span>
-              <p className="text-sm md:text-base text-muted-foreground mt-1 md:mt-2">{t.about.stats.projects}</p>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-bold" style={{ color: "#d39f17" }}>500+</span>
+              <p className="text-sm md:text-base mt-1 md:mt-2" style={{ color: "#ffffff" }}>{t.about.stats.projects}</p>
             </div>
             <div className="bg-card p-4 md:p-6 rounded-xl border border-border">
-              <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">300+</span>
-              <p className="text-sm md:text-base text-muted-foreground mt-1 md:mt-2">{t.about.stats.clients}</p>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-bold" style={{ color: "#d39f17" }}>300+</span>
+              <p className="text-sm md:text-base mt-1 md:mt-2" style={{ color: "#ffffff" }}>{t.about.stats.clients}</p>
             </div>
           </div>
         </div>
