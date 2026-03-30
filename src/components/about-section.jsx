@@ -4,9 +4,9 @@ export default function AboutSection() {
   const { t } = useLanguage()
 
   return (
-    <section id="about" className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-        <div className="relative">
+    <section id="about" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 md:px-8 md:py-24">
+      <div className="grid items-center gap-10 md:grid-cols-2 md:gap-12">
+        <div className="relative overflow-hidden">
           <div className="aspect-[4/5] rounded-xl md:rounded-2xl overflow-hidden">
             <img
               src="/camera.png"
@@ -14,17 +14,17 @@ export default function AboutSection() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl bg-[#646cff]">
+          <div className="absolute bottom-4 right-4 rounded-xl bg-[#646cff] p-4 text-primary-foreground shadow-lg sm:bottom-6 sm:right-6 sm:p-6">
             <span className="text-3xl sm:text-4xl md:text-5xl font-bold">10+</span>
             <p className="text-sm sm:text-base md:text-lg">{t.about.stats.years}</p>
           </div>
         </div>
 
-        <div>
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-6 md:mb-8">{t.about.title}</h2>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 md:mb-8">{t.about.text}</p>
+        <div className="text-center md:text-left">
+          <h2 className="mb-6 text-4xl font-bold text-foreground sm:text-5xl md:mb-8 md:text-7xl">{t.about.title}</h2>
+          <p className="mb-6 text-base leading-relaxed text-muted-foreground sm:text-lg md:mb-8 md:text-xl">{t.about.text}</p>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6">
             <div className="bg-card p-4 md:p-6 rounded-xl border border-border">
               <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">500+</span>
               <p className="text-sm md:text-base text-muted-foreground mt-1 md:mt-2">{t.about.stats.projects}</p>

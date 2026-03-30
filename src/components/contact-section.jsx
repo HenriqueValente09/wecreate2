@@ -87,13 +87,13 @@ export default function ContactSection() {
   ]
 
   return (
-    <section id="contact" className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
+    <section id="contact" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 md:px-8 md:py-24">
       <div className="text-center mb-10 md:mb-16">
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-3 md:mb-4">{t.contact.title}</h2>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground">{t.contact.subtitle}</p>
+        <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground">{t.contact.subtitle}</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+      <div className="grid items-start gap-8 md:grid-cols-2 md:gap-12">
         <div>
           <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 md:mb-6">{t.contact.socialTitle}</h3>
           <div className="flex flex-col gap-3 md:gap-4">
@@ -103,12 +103,12 @@ export default function ContactSection() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group flex items-center gap-4 bg-card p-4 md:p-5 rounded-xl border border-border transition-all duration-300 hover:shadow-lg ${social.color}`}
+                className={`group flex min-w-0 items-center gap-4 rounded-xl border border-border bg-card p-4 transition-all duration-300 hover:shadow-lg md:p-5 ${social.color}`}
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-lg flex items-center justify-center transition-colors">
                   <social.icon className={`w-5 h-5 md:w-6 md:h-6 text-foreground/70 transition-colors ${social.iconColor}`} />
                 </div>
-                <span className="text-lg md:text-xl font-medium text-foreground">{social.name}</span>
+                <span className="min-w-0 break-words text-base font-medium text-foreground sm:text-lg md:text-xl">{social.name}</span>
               </a>
             ))}
           </div>
@@ -152,7 +152,7 @@ export default function ContactSection() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground rounded-xl text-base md:text-lg font-medium hover:bg-primary/90 transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-white text-black rounded-xl text-base md:text-lg font-medium hover:bg-white/90 transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed md:mx-auto"
             >
               {status === "sending" ? (
                 <>

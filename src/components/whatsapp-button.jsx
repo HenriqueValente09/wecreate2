@@ -20,9 +20,9 @@ export default function WhatsAppButton() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-4">
+    <div className="fixed bottom-3 right-3 z-50 flex flex-col items-end gap-3 sm:bottom-6 sm:right-6 sm:gap-4">
       {isOpen && (
-        <div className="w-[calc(100vw-2rem)] sm:w-80 max-w-80 bg-card border border-border rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 fade-in duration-300">
+        <div className="w-[calc(100vw-1.5rem)] max-w-sm overflow-hidden rounded-2xl border border-border bg-card shadow-2xl animate-in slide-in-from-bottom-4 fade-in duration-300 sm:w-80">
           <div className="bg-[#d39f17] p-3 sm:p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center">

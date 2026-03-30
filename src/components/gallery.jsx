@@ -18,12 +18,12 @@ export default function Gallery({
   const { t } = useLanguage();
 
   return (
-    <section id="gallery" className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
+    <section id="gallery" className="max-w-7xl mx-auto px-4 py-16 sm:px-6 md:px-8 md:py-24">
       <div className="text-center mb-10 md:mb-16">
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-3 md:mb-4">
           {t.gallery.title}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground">{t.gallery.subtitle}</p>
+        <p className="mx-auto max-w-2xl text-base sm:text-lg md:text-xl text-muted-foreground">{t.gallery.subtitle}</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">

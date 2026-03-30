@@ -7,12 +7,14 @@ const services = [
     key: "wecreate",
     image: "/creative-editorial-photography-artistic-portrait.jpg",
     gradient: "from-purple-900/80 to-indigo-900/80",
+    href: "#contact",
   },
 
   {
     key: "ballersvision",
     image: "/soccer-player-celebrating-sports-photography.jpg",
     gradient: "from-orange-900/80 to-red-900/80",
+    href: "/ballersvision",
   },
 ];
 
@@ -40,7 +42,7 @@ export default function ServicesCarousel() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 px-4 md:px-8">
+    <section id="services" className="px-4 py-16 sm:px-6 md:px-8 md:py-24">
       <div className="text-center mb-10 md:mb-16">
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground mb-4">
           {t.services.title}
@@ -48,7 +50,7 @@ export default function ServicesCarousel() {
       </div>
 
       <div className="max-w-6xl mx-auto relative">
-        <div className="relative h-[350px] sm:h-[450px] md:h-[600px] overflow-hidden rounded-xl md:rounded-2xl">
+        <div className="relative h-[440px] sm:h-[500px] md:h-[600px] overflow-hidden rounded-xl md:rounded-2xl">
           {services.map((service, index) => {
             const serviceData = t.services[service.key];
             return (
@@ -71,22 +73,16 @@ export default function ServicesCarousel() {
                   className={`absolute inset-0 bg-gradient-to-r ${service.gradient}`}
                 />
 
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6 sm:px-10 md:px-16">
-                  <h3 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 md:mb-6">
+                <div className="absolute inset-0 flex flex-col items-center justify-center px-5 py-8 text-center sm:px-10 md:px-16">
+                  <h3 className="mb-4 text-[clamp(2.75rem,12vw,8rem)] font-bold leading-none text-foreground md:mb-6">
                     {serviceData.name}
                   </h3>
-                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-2xl leading-relaxed">
+                  <p className="max-w-[34rem] text-sm leading-relaxed text-foreground/90 sm:text-lg md:text-xl lg:text-2xl">
                     {serviceData.desc}
                   </p>
                   <a
-                    href={
-                      "/" + current == 0
-                        ? ""
-                        : current == 2
-                          ? "ballersvision"
-                          : ""
-                    }
-                    className="text-base sm:text-lg md:text-xl bg-[#222222] cursor-pointer px-5 py-3 sm:px-6 sm:py-4 rounded-lg text-foreground/90 max-w-2xl leading-relaxed mt-4 md:mt-5 inline-block font-medium hover:bg-[#333333] transition-colors"
+                    href={service.href}
+                    className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-[#222222] px-5 py-3 text-base font-medium leading-relaxed text-foreground/90 transition-colors hover:bg-[#333333] sm:mt-5 sm:w-auto sm:px-6 sm:py-4 sm:text-lg md:text-xl"
                   >
                     {serviceData.button}
                   </a>
@@ -127,7 +123,7 @@ export default function ServicesCarousel() {
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === current
                   ? "w-12 bg-primary"
-                  : "w-2 bg-foreground/30 hover:bg-foreground/50"
+                  : "w-3 bg-foreground/30 hover:bg-foreground/50"
               }`}
             />
           ))}

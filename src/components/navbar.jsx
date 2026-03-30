@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Menu, X, Globe, ChevronDown } from "lucide-react"
 import { useLanguage } from "./language-context"
 
@@ -18,19 +18,30 @@ export default function Navbar() {
 
   const currentLang = languages.find((l) => l.code === language)
 
+  useEffect(() => {
+    if (!isOpen) return undefined
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [isOpen])
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b-[0.5px] border-white/20 bg-black/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a
             href="/"
-            className="text-2xl sm:text-3xl font-bold text-white hover:text-[#646cff] transition-colors"
+            className="max-w-[12rem] text-[1.75rem] sm:text-3xl font-bold text-white hover:text-[#646cff] transition-colors"
             style={{ fontFamily: "var(--font-accent)" }}
           >
             wecreate
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             <a href="#home" className="text-base lg:text-lg text-white text-foreground/80 hover:text-primary transition-colors">
               {t.nav.home}
             </a>
@@ -50,10 +61,11 @@ export default function Navbar() {
             <div className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-2 px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors text-foreground"
+                className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white text-black hover:bg-white/90 transition-colors"
               >
                 <Globe className="w-4 h-4" />
-                <span className="text-sm lg:text-base">{currentLang?.name}</span>
+                <span className="text-sm uppercase lg:hidden">{currentLang?.code}</span>
+                <span className="hidden text-sm lg:inline lg:text-base">{currentLang?.name}</span>
                 <ChevronDown className={`w-4 h-4 transition-transform ${langOpen ? "rotate-180" : ""}`} />
               </button>
 
@@ -79,13 +91,17 @@ export default function Navbar() {
             </div>
           </div>
 
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-foreground p-2">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="p-2 text-foreground md:hidden rounded-lg border border-white/10 bg-white/5"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="border-t border-border py-4 md:hidden max-h-[calc(100svh-4rem)] overflow-y-auto">
             <div className="flex flex-col gap-1">
               <a href="#home" onClick={() => setIsOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors px-3 py-3 rounded-lg hover:bg-secondary/50">
                 {t.nav.home}
@@ -105,7 +121,7 @@ export default function Navbar() {
 
               <div className="pt-4 mt-2 border-t border-border">
                 <p className="text-sm text-muted-foreground mb-3 px-3">Language</p>
-                <div className="grid grid-cols-2 gap-2 px-3">
+                <div className="grid grid-cols-1 gap-2 px-3 pb-2 sm:grid-cols-2">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -113,12 +129,12 @@ export default function Navbar() {
                         setLanguage(lang.code)
                         setIsOpen(false)
                       }}
-                      className={`flex items-center gap-2 px-3 py-2.5 rounded-lg transition-colors ${
+                      className={`flex w-full min-w-0 items-center gap-2 px-3 py-2.5 rounded-lg transition-colors ${
                         language === lang.code ? "bg-primary text-primary-foreground" : "bg-secondary text-foreground"
                       }`}
                     >
                       <span>{lang.flag}</span>
-                      <span className="text-sm">{lang.name}</span>
+                      <span className="truncate text-left text-sm">{lang.name}</span>
                     </button>
                   ))}
                 </div>
